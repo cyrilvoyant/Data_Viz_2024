@@ -1,0 +1,21 @@
+# MATLAB
+*.asv
+*.mex*
+*.mat
+*.mlx
+*.autosave
+
+# Figures
+*.fig
+
+# Data (avoid committing large/volatile files)
+Data/
+data/
+*.csv
+*.xlsx
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
