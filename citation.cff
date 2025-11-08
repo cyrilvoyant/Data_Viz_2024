@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Data_Viz_2024: MATLAB visualisation of hourly energy production (Corsica)"
+authors:
+  - family-names: Voyant
+    given-names: Cyril
+    orcid: "https://orcid.org/0000-0003-0242-7377"
+url: "https://github.com/cyrilvoyant/Data_Viz_2024"
+repository-code: "https://github.com/cyrilvoyant/Data_Viz_2024"
+license: "GPL-3.0"
+version: "1.0.0"
+date-released: "2025-11-08"
+keywords:
+  - energy production
+  - time series
+  - visualisation
+  - MATLAB
+  - Corsica
+  - EDF Open Data
