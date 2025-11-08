@@ -1,0 +1,33 @@
+
+---
+
+# ✅ schema.json (JSON-LD SEO, MATLAB-only)
+
+```json
+{
+  "@context": "https://schema.org/",
+  "@type": "SoftwareSourceCode",
+  "name": "Data_Viz_2024",
+  "description": "MATLAB scripts and figures for visualising hourly energy production in Corsica (thermal, hydro, solar, wind, biomass, imports) from EDF Open Data; generates Forecast_*h.fig plots for multiple horizons.",
+  "url": "https://github.com/cyrilvoyant/Data_Viz_2024",
+  "codeRepository": "https://github.com/cyrilvoyant/Data_Viz_2024",
+  "programmingLanguage": "MATLAB",
+  "license": "GPL-3.0",
+  "keywords": [
+    "energy production",
+    "time series",
+    "visualisation",
+    "MATLAB",
+    "Corsica",
+    "EDF Open Data",
+    "forecast horizons",
+    "figures"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Cyril Voyant",
+    "url": "https://cyrilvoyant.com",
+    "identifier": "https://orcid.org/0000-0003-0242-7377"
+  },
+  "isBasedOn": "https://opendata-corse.edf.fr/"
+}
