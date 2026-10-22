@@ -5,6 +5,14 @@ version: "2.0.0"
 date-released: "2026-10-22"
 license: GPL-3.0
 repository-code: "https://github.com/cyrilvoyant/Data_Viz_2024"
+doi: "10.5281/zenodo.23562559"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23562559"
+    description: "Concept DOI (all versions, Zenodo)"
+  - type: doi
+    value: "10.5281/zenodo.23562560"
+    description: "Version DOI of v2.0.0 (Zenodo)"
 keywords:
   - energy forecasting
   - extreme learning machine

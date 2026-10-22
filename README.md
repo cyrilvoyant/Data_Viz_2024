@@ -1,5 +1,7 @@
 # MIMO-ELM forecasting of the Corsican electricity mix
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23562559.svg)](https://doi.org/10.5281/zenodo.23562559) (all versions; v2.0.0: [10.5281/zenodo.23562560](https://doi.org/10.5281/zenodo.23562560))
+
 **Forecast every source of an island grid at once (thermal, imports, hydropower, solar, wind, bioenergy and the total) with Extreme Learning Machines, from EDF open data.**
 MATLAB code of the MIMO article, Python code of the multi-horizon extension with reconciliation (MIMO-MH), the hourly data, and figures.
 
