@@ -1,0 +1,104 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "MIMO-ELM forecasting of the Corsican electricity mix: MATLAB code of the MIMO article, MIMO-MH Python pipeline with reconciliation, EDF open data",
+  "description": "MIMO-ELM forecasting of the Corsican electricity mix (EDF open data): MATLAB code of the Applied Energy 2026 article, MIMO-MH Python pipeline with reconciliation, data and figures.",
+  "codeRepository": "https://github.com/cyrilvoyant/Data_Viz_2024",
+  "url": "https://cyrilvoyant.github.io/methods/mimo-elm-energy-mix.html",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Cyril",
+      "familyName": "Voyant",
+      "@id": "https://orcid.org/0000-0003-0242-7377",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, Centre O.I.E."
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Yoan",
+      "familyName": "Jheelan",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, Centre O.I.E."
+      }
+    }
+  ],
+  "license": "https://spdx.org/licenses/GPL-3.0-only",
+  "version": "2.0.0",
+  "dateModified": "2026-10-22",
+  "programmingLanguage": [
+    "MATLAB",
+    "Python"
+  ],
+  "keywords": [
+    "energy forecasting",
+    "extreme learning machine",
+    "multi-output",
+    "forecast reconciliation",
+    "island grid",
+    "Corsica",
+    "EDF open data"
+  ],
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "Short-term forecasting of energy production and consumption using extreme learning machine: A comprehensive MIMO based ELM approach",
+    "author": [
+      {
+        "@type": "Person",
+        "givenName": "Cyril",
+        "familyName": "Voyant",
+        "@id": "https://orcid.org/0000-0003-0242-7377"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Milan",
+        "familyName": "Despotovic",
+        "@id": "https://orcid.org/0000-0003-3144-5945"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Luis",
+        "familyName": "Garcia-Gutierrez",
+        "@id": "https://orcid.org/0000-0002-3480-1784"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Mohammed",
+        "familyName": "Asloune",
+        "@id": "https://orcid.org/0009-0004-0183-2156"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Yves-Marie",
+        "familyName": "Saint-Drenan",
+        "@id": "https://orcid.org/0000-0003-1471-1092"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Jean-Laurent",
+        "familyName": "Duchaud",
+        "@id": "https://orcid.org/0000-0001-7490-7260"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Ghjuvan Antone",
+        "familyName": "Faggianelli",
+        "@id": "https://orcid.org/0000-0002-9954-5910"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Elena",
+        "familyName": "Magliaro"
+      }
+    ],
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "Applied Energy"
+    },
+    "datePublished": "2026",
+    "identifier": "https://doi.org/10.1016/j.apenergy.2026.127599"
+  }
+}
