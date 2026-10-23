@@ -1,0 +1,53 @@
+@prefix wsem: <https://w3id.org/websemantic/ns#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix : <https://cyrilvoyant.github.io/ontology/Data_Viz_2024#> .
+
+# Instances of the WebSemantic core vocabulary for Data_Viz_2024 (generated 2026-10-23; documentation only).
+
+:software a wsem:Software, schema:SoftwareSourceCode ;
+    schema:name "MIMO-ELM forecasting of the Corsican electricity mix (MATLAB, Python, EDF open data)" ;
+    schema:codeRepository <https://github.com/cyrilvoyant/Data_Viz_2024> ;
+    wsem:conceptDOI "https://doi.org/10.5281/zenodo.23562559" ;
+    schema:identifier <https://doi.org/10.5281/zenodo.23562559> ;
+    schema:license "GPL-3.0" ;
+    schema:programmingLanguage "MATLAB; Python" ;
+    schema:description "One extreme learning machine forecasts the seven signals of the Corsican grid at once (total, thermal, imports, hydropower, solar, wind, bioenergy)." ;
+    schema:author <https://orcid.org/0000-0003-0242-7377> ;
+    schema:author [ a schema:Person ; schema:name "Yoan Jheelan" ] ;
+    schema:citation <https://doi.org/10.1016/j.apenergy.2026.127599> ;
+    wsem:declaresParameter :in0 ;
+    wsem:declaresParameter :in1 ;
+    wsem:declaresOutput :out0 ;
+    wsem:declaresOutput :out1 ;
+    dcterms:modified "2026-10-23" .
+
+<https://orcid.org/0000-0003-0242-7377> a schema:Person ; schema:name "Cyril Voyant" .
+:in0 a wsem:ParameterDefinition ;
+    skos:prefLabel "Data.xlsx" ;
+    wsem:apiVariable "Data.xlsx" ;
+    skos:definition "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)" ;
+    wsem:canonicalUnit unit:MegaW ;
+    wsem:quantityKind qk:Power .
+:in1 a wsem:ParameterDefinition ;
+    skos:prefLabel "prediction_horizon" ;
+    wsem:apiVariable "prediction_horizon" ;
+    skos:definition "forecast horizon in hours" ;
+    wsem:canonicalUnit unit:HR ;
+    wsem:quantityKind qk:Time .
+:out0 a wsem:OutputVariable ;
+    skos:prefLabel "forecasts" ;
+    wsem:apiVariable "forecasts" ;
+    skos:definition "the seven signals at the horizon" ;
+    wsem:canonicalUnit unit:MegaW ;
+    wsem:quantityKind qk:Power .
+:out1 a wsem:OutputVariable ;
+    skos:prefLabel "nRMSE, nMAE, R²" ;
+    wsem:apiVariable "nRMSE, nMAE, R²" ;
+    skos:definition "scores against observations; persistence as reference" ;
+    wsem:canonicalUnit unit:UNITLESS ;
+    wsem:quantityKind qk:Dimensionless .

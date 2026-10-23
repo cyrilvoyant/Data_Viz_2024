@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "wsem": "https://w3id.org/websemantic/ns#"
+  },
+  "@type": "SoftwareSourceCode",
+  "@id": "https://doi.org/10.5281/zenodo.23562559",
+  "name": "MIMO-ELM forecasting of the Corsican electricity mix (MATLAB, Python, EDF open data)",
+  "description": "One extreme learning machine forecasts the seven signals of the Corsican grid at once (total, thermal, imports, hydropower, solar, wind, bioenergy).",
+  "codeRepository": "https://github.com/cyrilvoyant/Data_Viz_2024",
+  "license": "GPL-3.0",
+  "programmingLanguage": "MATLAB; Python",
+  "keywords": [
+    "energy forecasting",
+    "extreme learning machine",
+    "MIMO",
+    "Corsica",
+    "electricity mix"
+  ],
+  "dateModified": "2026-10-23",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Cyril Voyant",
+      "@id": "https://orcid.org/0000-0003-0242-7377"
+    },
+    {
+      "@type": "Person",
+      "name": "Yoan Jheelan"
+    }
+  ],
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "@id": "https://doi.org/10.1016/j.apenergy.2026.127599",
+    "name": "C. Voyant, M. Despotovic, L. Garcia-Gutierrez, M. Asloune, Y.-M. Saint-Drenan, J.-L. Duchaud, G. A. Faggianelli, E. Magliaro. Short-term forecasting of energy production and consumption using extreme learning machine: A comprehensive MIMO based ELM approach. Applied Energy 410 (2026) 127599"
+  },
+  "wsem:declaresParameter": [
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "Data.xlsx",
+      "description": "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)",
+      "valueRequired": true,
+      "unitText": "MW",
+      "unitCode": "http://qudt.org/vocab/unit/MegaW"
+    },
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "prediction_horizon",
+      "description": "forecast horizon in hours",
+      "valueRequired": true,
+      "unitText": "h",
+      "unitCode": "http://qudt.org/vocab/unit/HR"
+    }
+  ],
+  "wsem:declaresOutput": [
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "forecasts",
+      "description": "the seven signals at the horizon",
+      "valueRequired": true,
+      "unitText": "MW",
+      "unitCode": "http://qudt.org/vocab/unit/MegaW"
+    },
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "nRMSE, nMAE, R²",
+      "description": "scores against observations; persistence as reference",
+      "valueRequired": true,
+      "unitText": "1",
+      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
+    }
+  ]
+}
