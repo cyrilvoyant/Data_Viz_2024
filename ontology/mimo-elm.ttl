@@ -1,0 +1,13 @@
+@prefix schema: <https://schema.org/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix cv: <https://github.com/cyrilvoyant/Data_Viz_2024#> .
+cv:software a schema:SoftwareSourceCode ; schema:name "MIMO-ELM distributed MATLAB script" ;
+ schema:codeRepository <https://github.com/cyrilvoyant/Data_Viz_2024> ;
+ schema:programmingLanguage "MATLAB" ;
+ schema:identifier <https://doi.org/10.5281/zenodo.23562559> ;
+ schema:citation <https://doi.org/10.1016/j.apenergy.2026.127599> ;
+ schema:description "Documented feature, initialization-count and test-selection differences from author manuscript; not certified as exact replication." ;
+ cv:input cv:history, cv:horizon ; cv:output cv:forecast .
+cv:history a schema:PropertyValue ; schema:name "Historical seven-series power mix" ; schema:unitCode unit:MegaW .
+cv:horizon a schema:PropertyValue ; schema:name "Forecast horizon in hourly rows" .
+cv:forecast a schema:PropertyValue ; schema:name "Seven power forecasts at one horizon" ; schema:unitCode unit:MegaW ; schema:description "No imposed sum constraint in the MATLAB script." .

@@ -75,6 +75,8 @@ Hourly electricity production by source in Corsica, 1 January 2016 to 31 Decembe
 
 ## Quick start
 
+**Reproduction note (23 October 2026):** comparison of `main.m` with author manuscript arXiv:2508.12764v2 found 432 versus 338 features, 2 versus 50 initializations, and initialization selection using test RMSE rather than the manuscript's in-sample criterion. The script is preserved; its nominal test set is therefore not untouched by model selection. See [scientific use contract](llm.md) before treating a rerun as paper replication. Machine-readable documentation: [descriptor](websemantic.json), [Turtle](ontology/mimo-elm.ttl), [JSON-LD](ontology/mimo-elm.jsonld).
+
 **MATLAB (MIMO article).**
 
 ```matlab

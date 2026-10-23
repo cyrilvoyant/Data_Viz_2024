@@ -1,0 +1,14 @@
+{
+ "schema_version":"mimo-documentation-contract-1",
+ "integration_status":"documentation_only_not_registered_with_websemantic",
+ "scientific_replication_status":"unresolved_manuscript_script_differences",
+ "software":{"repository":"https://github.com/cyrilvoyant/Data_Viz_2024","source_commit":"6894ac5a06d20cb56a690cd44b2220250f5c0151","entry_point":"main.m","runtime":"MATLAB","doi":"10.5281/zenodo.23562559"},
+ "inputs":{"spreadsheet":{"path":"Data.xlsx","required":true,"power_unit":"http://qudt.org/vocab/unit/MegaW"},"window_size":{"default":48,"unit":"hourly rows"},"prediction_horizon":{"default":1,"unit":"hourly rows"},"numHiddenUnits":{"default":4096,"unit":"neurons"},"numInitializations":{"default":2,"unit":"random fits"}},
+ "interface":"Script-level settings; no parameterized or registered API",
+ "context_required":["data chronology and timezone","missing data policy","sampling interval","training validation test protocol","random seed","feature definition"],
+ "outputs":{"predictions":{"order":["total","thermal","hydro","solar","wind","bioenergy","imports"],"unit":"http://qudt.org/vocab/unit/MegaW"}},
+ "known_differences":["Script432 features versus manuscript338","Script2 initializations versus manuscript50","Script selects initialization using test RMSE; manuscript states in-sample selection"],
+ "scientific_authority":"arXiv:2508.12764v2 Sections4.3–4.4; publisher version not compared line by line",
+ "article_doi":"10.1016/j.apenergy.2026.127599",
+ "limits":["Do not claim untouched test-set evaluation for main.m","Full fit not executed during documentation audit","Separate MIMO-MH manuscript protocol not validated here","Shared hidden layer does not guarantee energy-balance coherence"]
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#software",
+    "@type": [
+      "https://schema.org/SoftwareSourceCode"
+    ],
+    "https://github.com/cyrilvoyant/Data_Viz_2024#input": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#history"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#horizon"
+      }
+    ],
+    "https://github.com/cyrilvoyant/Data_Viz_2024#output": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#forecast"
+      }
+    ],
+    "https://schema.org/citation": [
+      {
+        "@id": "https://doi.org/10.1016/j.apenergy.2026.127599"
+      }
+    ],
+    "https://schema.org/codeRepository": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Documented feature, initialization-count and test-selection differences from author manuscript; not certified as exact replication."
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://doi.org/10.5281/zenodo.23562559"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "MIMO-ELM distributed MATLAB script"
+      }
+    ],
+    "https://schema.org/programmingLanguage": [
+      {
+        "@value": "MATLAB"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#horizon",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Forecast horizon in hourly rows"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#forecast",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "No imposed sum constraint in the MATLAB script."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Seven power forecasts at one horizon"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#history",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Historical seven-series power mix"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ]
+  }
+]
