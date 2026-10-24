@@ -1,13 +1,114 @@
+# Public documentation only; aliases serialize the same graph.
+@prefix : <https://cyrilvoyant.github.io/ontology/Data_Viz_2024#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://github.com/cyrilvoyant/Data_Viz_2024#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
 @prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix cv: <https://github.com/cyrilvoyant/Data_Viz_2024#> .
-cv:software a schema:SoftwareSourceCode ; schema:name "MIMO-ELM distributed MATLAB script" ;
- schema:codeRepository <https://github.com/cyrilvoyant/Data_Viz_2024> ;
- schema:programmingLanguage "MATLAB" ;
- schema:identifier <https://doi.org/10.5281/zenodo.23562559> ;
- schema:citation <https://doi.org/10.1016/j.apenergy.2026.127599> ;
- schema:description "Documented feature, initialization-count and test-selection differences from author manuscript; not certified as exact replication." ;
- cv:input cv:history, cv:horizon ; cv:output cv:forecast .
-cv:history a schema:PropertyValue ; schema:name "Historical seven-series power mix" ; schema:unitCode unit:MegaW .
-cv:horizon a schema:PropertyValue ; schema:name "Forecast horizon in hourly rows" .
-cv:forecast a schema:PropertyValue ; schema:name "Seven power forecasts at one horizon" ; schema:unitCode unit:MegaW ; schema:description "No imposed sum constraint in the MATLAB script." .
+@prefix wsem: <https://w3id.org/websemantic/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:software a schema:SoftwareSourceCode,
+        wsem:Software ;
+    dcterms:modified "2026-10-23" ;
+    owl:sameAs <https://doi.org/10.5281/zenodo.23562559> ;
+    ns1:input ns1:history,
+        ns1:horizon ;
+    ns1:output ns1:forecast ;
+    schema:author [ a schema:Person ;
+            schema:name "Yoan Jheelan" ],
+        <https://orcid.org/0000-0003-0242-7377> ;
+    schema:citation <https://doi.org/10.1016/j.apenergy.2026.127599> ;
+    schema:codeRepository <https://github.com/cyrilvoyant/Data_Viz_2024> ;
+    schema:dateModified "2026-10-23"^^xsd:date ;
+    schema:description "Documented feature, initialization-count and test-selection differences from author manuscript; not certified as exact replication.",
+        "One extreme learning machine forecasts the seven signals of the Corsican grid at once (total, thermal, imports, hydropower, solar, wind, bioenergy)." ;
+    schema:identifier <https://doi.org/10.5281/zenodo.23562559> ;
+    schema:keywords "Corsica",
+        "MIMO",
+        "electricity mix",
+        "energy forecasting",
+        "extreme learning machine" ;
+    schema:license "GPL-3.0" ;
+    schema:name "MIMO-ELM distributed MATLAB script",
+        "MIMO-ELM forecasting of the Corsican electricity mix (MATLAB, Python, EDF open data)" ;
+    schema:programmingLanguage "MATLAB",
+        "MATLAB; Python" ;
+    wsem:conceptDOI "https://doi.org/10.5281/zenodo.23562559" ;
+    wsem:declaresOutput :out0,
+        :out1 ;
+    wsem:declaresParameter :in0,
+        :in1 .
+
+:in0 a schema:PropertyValueSpecification,
+        wsem:ParameterDefinition ;
+    skos:definition "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)" ;
+    skos:prefLabel "Data.xlsx" ;
+    schema:description "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)" ;
+    schema:name "Data.xlsx" ;
+    schema:unitCode unit:MegaW ;
+    schema:unitText "MW" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "Data.xlsx" ;
+    wsem:canonicalUnit unit:MegaW ;
+    wsem:quantityKind qk:Power .
+
+:in1 a schema:PropertyValueSpecification,
+        wsem:ParameterDefinition ;
+    skos:definition "forecast horizon in hours" ;
+    skos:prefLabel "prediction_horizon" ;
+    schema:description "forecast horizon in hours" ;
+    schema:name "prediction_horizon" ;
+    schema:unitCode unit:HR ;
+    schema:unitText "h" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "prediction_horizon" ;
+    wsem:canonicalUnit unit:HR ;
+    wsem:quantityKind qk:Time .
+
+:out0 a schema:PropertyValueSpecification,
+        wsem:OutputVariable ;
+    skos:definition "the seven signals at the horizon" ;
+    skos:prefLabel "forecasts" ;
+    schema:description "the seven signals at the horizon" ;
+    schema:name "forecasts" ;
+    schema:unitCode unit:MegaW ;
+    schema:unitText "MW" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "forecasts" ;
+    wsem:canonicalUnit unit:MegaW ;
+    wsem:quantityKind qk:Power .
+
+:out1 a schema:PropertyValueSpecification,
+        wsem:OutputVariable ;
+    skos:definition "scores against observations; persistence as reference" ;
+    skos:prefLabel "nRMSE, nMAE, R²" ;
+    schema:description "scores against observations; persistence as reference" ;
+    schema:name "nRMSE, nMAE, R²" ;
+    schema:unitCode unit:UNITLESS ;
+    schema:unitText "1" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "nRMSE, nMAE, R²" ;
+    wsem:canonicalUnit unit:UNITLESS ;
+    wsem:quantityKind qk:Dimensionless .
+
+<https://doi.org/10.1016/j.apenergy.2026.127599> a schema:ScholarlyArticle ;
+    schema:name "C. Voyant, M. Despotovic, L. Garcia-Gutierrez, M. Asloune, Y.-M. Saint-Drenan, J.-L. Duchaud, G. A. Faggianelli, E. Magliaro. Short-term forecasting of energy production and consumption using extreme learning machine: A comprehensive MIMO based ELM approach. Applied Energy 410 (2026) 127599" .
+
+ns1:forecast a schema:PropertyValue ;
+    schema:description "No imposed sum constraint in the MATLAB script." ;
+    schema:name "Seven power forecasts at one horizon" ;
+    schema:unitCode unit:MegaW .
+
+ns1:history a schema:PropertyValue ;
+    schema:name "Historical seven-series power mix" ;
+    schema:unitCode unit:MegaW .
+
+ns1:horizon a schema:PropertyValue ;
+    schema:name "Forecast horizon in hourly rows" .
+
+<https://orcid.org/0000-0003-0242-7377> a schema:Person ;
+    schema:name "Cyril Voyant" .
+

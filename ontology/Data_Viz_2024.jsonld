@@ -1,73 +1,441 @@
-{
-  "@context": {
-    "@vocab": "https://schema.org/",
-    "wsem": "https://w3id.org/websemantic/ns#"
+[
+  {
+    "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#in0",
+    "@type": [
+      "https://schema.org/PropertyValueSpecification",
+      "https://w3id.org/websemantic/ns#ParameterDefinition"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Data.xlsx"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Data.xlsx"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ],
+    "https://schema.org/unitText": [
+      {
+        "@value": "MW"
+      }
+    ],
+    "https://schema.org/valueRequired": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "https://w3id.org/websemantic/ns#apiVariable": [
+      {
+        "@value": "Data.xlsx"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#canonicalUnit": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#quantityKind": [
+      {
+        "@id": "http://qudt.org/vocab/quantitykind/Power"
+      }
+    ]
   },
-  "@type": "SoftwareSourceCode",
-  "@id": "https://doi.org/10.5281/zenodo.23562559",
-  "name": "MIMO-ELM forecasting of the Corsican electricity mix (MATLAB, Python, EDF open data)",
-  "description": "One extreme learning machine forecasts the seven signals of the Corsican grid at once (total, thermal, imports, hydropower, solar, wind, bioenergy).",
-  "codeRepository": "https://github.com/cyrilvoyant/Data_Viz_2024",
-  "license": "GPL-3.0",
-  "programmingLanguage": "MATLAB; Python",
-  "keywords": [
-    "energy forecasting",
-    "extreme learning machine",
-    "MIMO",
-    "Corsica",
-    "electricity mix"
-  ],
-  "dateModified": "2026-10-23",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Cyril Voyant",
-      "@id": "https://orcid.org/0000-0003-0242-7377"
-    },
-    {
-      "@type": "Person",
-      "name": "Yoan Jheelan"
-    }
-  ],
-  "citation": {
-    "@type": "ScholarlyArticle",
+  {
+    "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#software",
+    "@type": [
+      "https://schema.org/SoftwareSourceCode",
+      "https://w3id.org/websemantic/ns#Software"
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2026-10-23"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://doi.org/10.5281/zenodo.23562559"
+      }
+    ],
+    "https://github.com/cyrilvoyant/Data_Viz_2024#input": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#horizon"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#history"
+      }
+    ],
+    "https://github.com/cyrilvoyant/Data_Viz_2024#output": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#forecast"
+      }
+    ],
+    "https://schema.org/author": [
+      {
+        "@id": "_:n9345a9fa0ee94c0188a9b7535449f18ab1"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-0242-7377"
+      }
+    ],
+    "https://schema.org/citation": [
+      {
+        "@id": "https://doi.org/10.1016/j.apenergy.2026.127599"
+      }
+    ],
+    "https://schema.org/codeRepository": [
+      {
+        "@id": "https://github.com/cyrilvoyant/Data_Viz_2024"
+      }
+    ],
+    "https://schema.org/dateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-10-23"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "One extreme learning machine forecasts the seven signals of the Corsican grid at once (total, thermal, imports, hydropower, solar, wind, bioenergy)."
+      },
+      {
+        "@value": "Documented feature, initialization-count and test-selection differences from author manuscript; not certified as exact replication."
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://doi.org/10.5281/zenodo.23562559"
+      }
+    ],
+    "https://schema.org/keywords": [
+      {
+        "@value": "Corsica"
+      },
+      {
+        "@value": "MIMO"
+      },
+      {
+        "@value": "electricity mix"
+      },
+      {
+        "@value": "energy forecasting"
+      },
+      {
+        "@value": "extreme learning machine"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@value": "GPL-3.0"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "MIMO-ELM forecasting of the Corsican electricity mix (MATLAB, Python, EDF open data)"
+      },
+      {
+        "@value": "MIMO-ELM distributed MATLAB script"
+      }
+    ],
+    "https://schema.org/programmingLanguage": [
+      {
+        "@value": "MATLAB; Python"
+      },
+      {
+        "@value": "MATLAB"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#conceptDOI": [
+      {
+        "@value": "https://doi.org/10.5281/zenodo.23562559"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#declaresOutput": [
+      {
+        "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#out0"
+      },
+      {
+        "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#out1"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#declaresParameter": [
+      {
+        "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#in0"
+      },
+      {
+        "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#in1"
+      }
+    ]
+  },
+  {
+    "@id": "_:n9345a9fa0ee94c0188a9b7535449f18ab1",
+    "@type": [
+      "https://schema.org/Person"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Yoan Jheelan"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0000-0003-0242-7377",
+    "@type": [
+      "https://schema.org/Person"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Cyril Voyant"
+      }
+    ]
+  },
+  {
+    "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#out0",
+    "@type": [
+      "https://schema.org/PropertyValueSpecification",
+      "https://w3id.org/websemantic/ns#OutputVariable"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "the seven signals at the horizon"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "forecasts"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "the seven signals at the horizon"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "forecasts"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ],
+    "https://schema.org/unitText": [
+      {
+        "@value": "MW"
+      }
+    ],
+    "https://schema.org/valueRequired": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "https://w3id.org/websemantic/ns#apiVariable": [
+      {
+        "@value": "forecasts"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#canonicalUnit": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#quantityKind": [
+      {
+        "@id": "http://qudt.org/vocab/quantitykind/Power"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#history",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Historical seven-series power mix"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#horizon",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Forecast horizon in hourly rows"
+      }
+    ]
+  },
+  {
+    "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#out1",
+    "@type": [
+      "https://schema.org/PropertyValueSpecification",
+      "https://w3id.org/websemantic/ns#OutputVariable"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "scores against observations; persistence as reference"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "nRMSE, nMAE, R²"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "scores against observations; persistence as reference"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "nRMSE, nMAE, R²"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/UNITLESS"
+      }
+    ],
+    "https://schema.org/unitText": [
+      {
+        "@value": "1"
+      }
+    ],
+    "https://schema.org/valueRequired": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "https://w3id.org/websemantic/ns#apiVariable": [
+      {
+        "@value": "nRMSE, nMAE, R²"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#canonicalUnit": [
+      {
+        "@id": "http://qudt.org/vocab/unit/UNITLESS"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#quantityKind": [
+      {
+        "@id": "http://qudt.org/vocab/quantitykind/Dimensionless"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/Data_Viz_2024#forecast",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "No imposed sum constraint in the MATLAB script."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Seven power forecasts at one horizon"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/MegaW"
+      }
+    ]
+  },
+  {
     "@id": "https://doi.org/10.1016/j.apenergy.2026.127599",
-    "name": "C. Voyant, M. Despotovic, L. Garcia-Gutierrez, M. Asloune, Y.-M. Saint-Drenan, J.-L. Duchaud, G. A. Faggianelli, E. Magliaro. Short-term forecasting of energy production and consumption using extreme learning machine: A comprehensive MIMO based ELM approach. Applied Energy 410 (2026) 127599"
+    "@type": [
+      "https://schema.org/ScholarlyArticle"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "C. Voyant, M. Despotovic, L. Garcia-Gutierrez, M. Asloune, Y.-M. Saint-Drenan, J.-L. Duchaud, G. A. Faggianelli, E. Magliaro. Short-term forecasting of energy production and consumption using extreme learning machine: A comprehensive MIMO based ELM approach. Applied Energy 410 (2026) 127599"
+      }
+    ]
   },
-  "wsem:declaresParameter": [
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "Data.xlsx",
-      "description": "hourly production by source and total, EDF Corse open data 2016–2022 (Licence Ouverte)",
-      "valueRequired": true,
-      "unitText": "MW",
-      "unitCode": "http://qudt.org/vocab/unit/MegaW"
-    },
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "prediction_horizon",
-      "description": "forecast horizon in hours",
-      "valueRequired": true,
-      "unitText": "h",
-      "unitCode": "http://qudt.org/vocab/unit/HR"
-    }
-  ],
-  "wsem:declaresOutput": [
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "forecasts",
-      "description": "the seven signals at the horizon",
-      "valueRequired": true,
-      "unitText": "MW",
-      "unitCode": "http://qudt.org/vocab/unit/MegaW"
-    },
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "nRMSE, nMAE, R²",
-      "description": "scores against observations; persistence as reference",
-      "valueRequired": true,
-      "unitText": "1",
-      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
-    }
-  ]
-}
+  {
+    "@id": "https://cyrilvoyant.github.io/ontology/Data_Viz_2024#in1",
+    "@type": [
+      "https://schema.org/PropertyValueSpecification",
+      "https://w3id.org/websemantic/ns#ParameterDefinition"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "forecast horizon in hours"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "prediction_horizon"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "forecast horizon in hours"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "prediction_horizon"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/HR"
+      }
+    ],
+    "https://schema.org/unitText": [
+      {
+        "@value": "h"
+      }
+    ],
+    "https://schema.org/valueRequired": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "https://w3id.org/websemantic/ns#apiVariable": [
+      {
+        "@value": "prediction_horizon"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#canonicalUnit": [
+      {
+        "@id": "http://qudt.org/vocab/unit/HR"
+      }
+    ],
+    "https://w3id.org/websemantic/ns#quantityKind": [
+      {
+        "@id": "http://qudt.org/vocab/quantitykind/Time"
+      }
+    ]
+  }
+]
