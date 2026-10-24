@@ -111,4 +111,3 @@ ns1:horizon a schema:PropertyValue ;
 
 <https://orcid.org/0000-0003-0242-7377> a schema:Person ;
     schema:name "Cyril Voyant" .
-
