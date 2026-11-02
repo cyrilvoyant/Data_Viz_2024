@@ -50,4 +50,4 @@ The isolated `reconciliation.py` utility expects arrays shaped (samples,horizons
 
 Published MIMO authors: Cyril Voyant, Milan Despotovic, Luis Garcia-Gutierrez, Mohammed Asloune, Yves-Marie Saint-Drenan, Jean-Laurent Duchaud, Ghjuvan Antone Faggianelli and Elena Magliaro. See CITATION.cff for full article citation. Preserve separate credits/status for MIMO-MH from README.
 
-Software concept DOI: https://doi.org/10.5281/zenodo.23562559 ; v2.0.0: https://doi.org/10.5281/zenodo.23562560 . Code GPL-3.0; EDF Corse data under Licence Ouverte, with source attribution. Later documentation is not retroactively part of an existing archive. These descriptors do not deploy an executable WebSemantic adapter.
+Software concept DOI: https://doi.org/10.5281/zenodo.23562559 ; v2.0.1: https://doi.org/10.5281/zenodo.23875017 . Code GPL-3.0; EDF Corse data under Licence Ouverte, with source attribution. Later documentation is not retroactively part of an existing archive. These descriptors do not deploy an executable WebSemantic adapter.
