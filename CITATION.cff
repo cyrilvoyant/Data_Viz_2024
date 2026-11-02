@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the article below."
 title: "MIMO-ELM forecasting of the Corsican electricity mix: MATLAB code of the MIMO article, MIMO-MH Python pipeline with reconciliation, EDF open data"
-version: "2.0.0"
-date-released: "2026-10-22"
+version: "2.0.1"
+date-released: "2026-11-02"
 license: GPL-3.0
 repository-code: "https://github.com/cyrilvoyant/Data_Viz_2024"
 doi: "10.5281/zenodo.23562559"
